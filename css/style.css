@@ -1,0 +1,137 @@
+/* container */
+.container {
+    width: min(100%, 1440px);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; */
+    /* top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    margin: auto;
+    border: 2px dashed green;
+    /* display: flex;
+    z-index: 0; */
+}
+
+/* section1_task1*/
+
+.section1 {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(221, 160, 221);
+}
+
+.button {
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 500px;
+    height: 140px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(221, 160, 221);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 0px white inset,
+        5px 5px 10px 0px black;
+    text-shadow: 3px 3px 5px black;
+    letter-spacing: 5px;
+    border: 0;
+}
+
+.button:hover {
+    box-shadow: inset 5px 5px 10px 0px black ,
+                inset -5px -5px 0px 0px white;
+    text-shadow: 1px 1px 5px black;
+    ;
+}
+
+/* section2 _ task2*/
+.section2 {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.section2_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.section2_article:hover {
+    box-shadow: 0 0 20px 0px red;        
+}
+
+.section2_article:hover img {
+    transform: scale(1.5);
+    filter: grayscale(100%);
+}
+
+.section2_article_img {
+    transition: transform 1s ease;
+}
+
+
+.section2_title {
+    align-self: flex-start;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(85, 6, 6);
+}
+
+.section2_article_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price_class {
+    align-self: flex-start;
+    font-size: 30px;
+    color: red;
+}
+
+.add_btn {
+    align-self: flex-end;
+    background-color: green;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* section3 _ task3*/
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.section3_p{
+    font-size: 140px;
+    color: red;
+    letter-spacing: 20px;
+
+    animation-name: txtChanging;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes txtChanging{
+    from{
+        color: rgba(255, 0, 0, 0.5);
+    }
+    to{
+        color: rgba(255, 0, 0, 0);        
+    }
+}
