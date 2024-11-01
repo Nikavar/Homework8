@@ -155,18 +155,16 @@
                 yellow 25% 50%,
                 green 50% 100%
             );
-    animation: circleChanging 2s linear infinite;
+    animation: circleChanging 1s linear infinite;
     animation-play-state: running;
 }
 
 @keyframes circleChanging{
     0%{
         transform: rotate(0deg);
-        animation-play-state: running;
     }
     25%{
         transform: rotate(90deg);
-        animation-play-state: running;
     }
     50%{
         transform: rotate(180deg);
@@ -188,6 +186,14 @@
     height: 140px;
     border-radius: 50%;
     background-color: white;
-    border: 1px solid red;
     position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_circle_txt{
+    color: green;
+    font-size: 30px;
+    font-weight: 700;
 }
