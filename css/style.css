@@ -149,6 +149,38 @@
     height: 200px;
     border-radius: 50%;
     background-color: green;
+
+    background: conic-gradient(
+                red 0% 25%,
+                yellow 25% 50%,
+                green 50% 100%
+            );
+    animation: circleChanging 2s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes circleChanging{
+    0%{
+        transform: rotate(0deg);
+        animation-play-state: running;
+    }
+    25%{
+        transform: rotate(90deg);
+        animation-play-state: running;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_circle:hover{    
+    animation-play-state: paused;
 }
 
 .small_circle{
